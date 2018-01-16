@@ -23,4 +23,4 @@ COPY redis /opt/redis/bin
 #执行启动脚本
 WORKDIR /opt/redis/bin
 #保持进程
-CMD ["./src/redis-server redis.conf"]
+CMD ["/opt/redis/bin/src/redis-server /opt/redis/bin/redis.conf"]
